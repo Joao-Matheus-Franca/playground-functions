@@ -10,18 +10,20 @@ function compareTrue(parametro01, parametro02) {
 
 // Desafio 2
 function calcArea(base, altura) {
-  let area = (base * altura)/2
+  let area = (base * altura)/2;
   return area;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(parametro) {
+  let frase = parametro.split(" ");
+  return frase;
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(parametro) {
+  let frase = parametro[parametro.length - 1] + ', ' + parametro[0];
+  return frase; 
 }
 
 // Desafio 5
