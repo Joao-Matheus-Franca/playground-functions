@@ -52,13 +52,56 @@ function highestCount(parametro) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+ let dist01 = 0;
+ let dist02 = 0;
+ let gato01 = 'cat1';
+ let gato02 = 'cat2';
+ let empate = 'os gatos trombam e o rato foge'
+if (mouse > cat1 && mouse > cat2){
+   dist01 = mouse - cat1;
+   dist02 = mouse - cat2;
+}
+else if (mouse > cat1 && mouse < cat2) {
+  dist01 = mouse - cat1;
+  dist02 = cat2 - mouse;
+}
+else if (mouse < cat1 && mouse > cat2){
+  dist01 = cat1 - mouse; 
+  dist02 = mouse - cat2; 
+}
+else if (mouse < cat1 && mouse < cat2) {
+  dist01 = cat1 - mouse;
+  dist02 = cat2 - mouse
+} 
+if (dist01 > dist02) {
+  return gato02
+}
+else if (dist01 < dist02) {
+  return gato01
+}
+else if (dist01 === dist02) {
+  return empate;
+}
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(parametro) { 
+  let total = [];
+  for (let i in parametro) {
+    if (parametro[i] % 3 === 0 && parametro[i] % 5 === 0) {
+      total.push('fizzBuzz')}
+    else if (parametro[i] % 5 === 0) {
+      total.push('buzz');
+    }
+    else if (parametro[i] % 3 === 0) {
+      total.push('fizz');
+  }
+    else if (parametro[i] % 3 > 0 && parametro[i] % 5 > 0) {
+      total.push('bug!')
+    }
+}
+return total;
 }
 
 // Desafio 9
