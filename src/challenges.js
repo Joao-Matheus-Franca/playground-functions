@@ -105,17 +105,76 @@ return total;
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(codigo) {
+let array = [];
+for (let i in codigo) {
+   array.push(codigo[i]);}
+for (let id in array) {
+  if (array[id] === 'a') {
+    array[id] = 1;
+  }
+  else if (array[id] === 'e') {
+    array[id] = 2;
+  }
+  else if (array[id] === 'i') {
+    array[id] = 3;
+  }
+  else if (array[id] === 'o') {
+    array[id] = 4;
+  }
+  else if (array[id] === 'u') {
+    array[id] = 5;
+  }
 }
-function decode() {
-  // seu código aqui
+return array.join("");
+}
+  
+function decode(codigo) {
+  let array = [];
+for (let i in codigo) {
+   array.push(codigo[i]);}
+for (let id in array) {
+  if (array[id] === '1') {
+    array[id] = 'a';
+  }
+  else if (array[id] === '2') {
+    array[id] = 'e';
+  }
+  else if (array[id] === '3') {
+    array[id] = 'i';
+  }
+  else if (array[id] === '4') {
+    array[id] = 'o';
+  }
+  else if (array[id] === '5') {
+    array[id] = 'u';
+  }
+}
+return array.join("");
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(parametro01, parametro02) {
+  let lista = [];
+  let ordenado = parametro01.sort();
+  let erro = 'Vazio!'
+  if (parametro01.length > 0){
+  for (let i in ordenado) {
+    lista.push({tech: ordenado[i],name:'Lucas'});
 }
+  return lista;
+}
+  else if (parametro01.length === 0)
+  {
+    return erro; 
+  }
+}
+
+
+let array = [];
+array.push({nome:'joao'});
+console.log(array);
+ 
 
 module.exports = {
   calcArea,
