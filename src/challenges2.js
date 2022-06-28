@@ -25,12 +25,24 @@ if (parametro.length != 11) {
   return numeroDDD+' '+numeroRestante;
 }
 
-
-
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let cond1 = false;
+  let cond2 = false;
+  if (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB){
+    cond1 = true;
+  }
+  if (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB)) {
+    cond2 = true;
+  }
+  if (cond1 === true && cond2 === true) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
