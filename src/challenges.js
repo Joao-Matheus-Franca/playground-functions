@@ -170,12 +170,6 @@ function techList(parametro01, parametro02) {
   }
 }
 
-
-let array = [];
-array.push({nome:'joao'});
-console.log(array);
- 
-
 module.exports = {
   calcArea,
   catAndMouse,
