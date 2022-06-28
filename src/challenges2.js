@@ -42,12 +42,23 @@ function triangleCheck(lineA, lineB, lineC) {
     return false;
   }
 }
-console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(parametro) {
+  let numeros = /\d+/g;
+  let resultado = parametro.match(numeros)
+  let contador = 0;
+  let frase;
+  for (let i in resultado) {
+    contador += Number(resultado[i]);
+  }
+  if (contador === 1) {
+    frase = contador + ' copo de água';}
+  else if (contador > 1){
+    frase = contador + ' copos de água';}
+  return frase;
 }
+
 
 module.exports = {
   generatePhoneNumber,
