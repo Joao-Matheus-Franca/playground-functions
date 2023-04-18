@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1 - Crie uma função usando o operador &&:
 function compareTrue(parametro01, parametro02) {
   if (parametro01 === true && parametro02 === true) {
     return true;
@@ -8,25 +8,25 @@ function compareTrue(parametro01, parametro02) {
   }
 }
 
-// Desafio 2
+// Desafio 2 - Crie uma função que calcula a área de um triângulo:
 function calcArea(base, altura) {
   let area = (base * altura)/2;
   return area;
 }
 
-// Desafio 3
+// Desafio 3 - Crie uma função que divida uma frase:
 function splitSentence(parametro) {
   let frase = parametro.split(" ");
   return frase;
 }
 
-// Desafio 4
+// Desafio 4 - Crie uma função que use concatenação de strings:
 function concatName(parametro) {
   let frase = parametro[parametro.length - 1] + ', ' + parametro[0];
   return frase; 
 }
 
-// Desafio 5
+// Desafio 5 - Crie uma função que calcula a quantidade de pontos em um campeonato de futebol:
 function footballPoints(wins, ties) {
   let pontosV = wins * 3;
   let pontosT = ties * 1;
@@ -34,7 +34,7 @@ function footballPoints(wins, ties) {
   return totalDePontos;
 }
 
-// Desafio 6
+// Desafio 6 - Crie uma função que calcula o número de repetições do maior número:
 function highestCount(parametro) {
   let maiorNumero = parametro[0];
   let arrayM = [];
@@ -51,7 +51,7 @@ function highestCount(parametro) {
   return arrayM.length;
 }
 
-// Desafio 7
+// Desafio 7 - Crie uma função de Caça ao Rato:
 function catAndMouse(mouse, cat1, cat2) {
  let dist01 = 0;
  let dist02 = 0;
@@ -85,7 +85,7 @@ else if (dist01 === dist02) {
 }
 }
 
-// Desafio 8
+// Desafio 8 - Crie uma função FizzBuzz:
 function fizzBuzz(parametro) { 
   let total = [];
   for (let i in parametro) {
@@ -104,7 +104,7 @@ function fizzBuzz(parametro) {
 return total;
 }
 
-// Desafio 9
+// Desafio 9 - Crie uma função que Codifique e Decodifique:
 function encode(codigo) {
 let array = [];
 for (let i in codigo) {
@@ -153,7 +153,7 @@ for (let id in array) {
 return array.join("");
 }
 
-// Desafio 10
+// Desafio 10 - Crie uma função de Lista de Tecnologias
 function techList(parametro01, parametro02) {
   let lista = [];
   let ordenado = parametro01.sort();

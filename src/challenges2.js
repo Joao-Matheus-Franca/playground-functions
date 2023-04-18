@@ -1,4 +1,4 @@
-// Desafio 11
+// Desafio 11 - Crie uma função de número de telefone:
 function generatePhoneNumber(parametro) {
 
   let erro1 = "Array com tamanho incorreto.";
@@ -25,7 +25,7 @@ if (parametro.length != 11) {
   return numeroDDD+' '+numeroRestante;
 }
 
-// Desafio 12
+// Desafio 12 - Crie uma função que teste a condição de existência de um triângulo:
 function triangleCheck(lineA, lineB, lineC) {
   let cond1 = false;
   let cond2 = false;
@@ -43,7 +43,7 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 }
 
-// Desafio 13
+// Desafio 13 - Crie uma função de boas vindas ao Bar da Trybe!:
 function hydrate(parametro) {
   let numeros = /\d+/g;
   let resultado = parametro.match(numeros)
