@@ -1,4 +1,7 @@
 # 🛹 Playground Functions 🛹
+## 📝 Contexto: 
+* Projeto individual realizado no bloco de Fundamentos do curso de desenvolvimento Web da
+<a href="https://www.betrybe.com/">Trybe</a>
 ## 🎯 Objetivos: 
 * Aplicar o versionamento de códigos com o uso dos princípios do Git e GitHub 
 * Realizar pequenos desafios técnicos através dos fundamentos da linguagem JavaScript
